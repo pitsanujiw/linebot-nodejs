@@ -2,10 +2,11 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
+require('dotenv').config()
 
 app.use(bodyParser.json())
 
-app.set('port', process.env.PORT)
+app.set('port', process.env.PORT || 4000)
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.get('/hello', (req, res) => {
@@ -58,6 +59,7 @@ function sendText (sender, text) {
   )
 }
 
-app.listen(app.get('port'), function () {
-  console.log('run at port', app.get('port'))
+server = app.listen(process.env.PORT, function () {
+  console.log(process.env.PORT)
+  console.log('run at port', server.address().port)
 })
