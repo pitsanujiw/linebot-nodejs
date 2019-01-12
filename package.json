@@ -5,8 +5,9 @@
   "main": "app.js",
   "author": "https://github.com/pitsanujiw",
   "license": "MIT",
+  "url": "https://github.com/pitsanujiw/linebot-nodejs",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
