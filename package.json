@@ -1,0 +1,16 @@
+{
+  "name": "linebot-jiw",
+  "version": "1.0 beta",
+  "description": "test develop line bot debut",
+  "main": "app.js",
+  "author": "https://github.com/pitsanujiw",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
