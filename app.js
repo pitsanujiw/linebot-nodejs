@@ -5,7 +5,7 @@ var app = express()
 
 app.use(bodyParser.json())
 
-app.set('port', process.env.PORT || 4000)
+app.set('port', process.env.PORT)
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.get('/hello', (req, res) => {
