@@ -11,6 +11,10 @@ app.use(bodyParser.json())
 app.get('/hello', (req, res) => {
   res.send('Hello line bot')
 })
+app.get('/', (req, res) => {
+  res.send('Hello line bot')
+})
+
 app.post('/webhook', (req, res) => {
   var text = req.body.events[0].message.text
   var sender = req.body.events[0].source.userId
