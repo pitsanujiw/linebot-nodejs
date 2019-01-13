@@ -1,3 +1,7 @@
+/**
+ * 
+ * @param {object} data 
+ */
 function Modeldata (data) {
   return new Promise((resolve, reject) => {
     if (data) {
